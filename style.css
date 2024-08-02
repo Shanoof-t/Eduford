@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(eduford_img/banner.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 6%;
+}
+
+section nav img{
+    width: 140px;
+    margin-top: 15px;
+}
+
+section nav .links{
+    flex: 1;
+    text-align: right;
+}
+section nav .links ul li{
+    text-decoration: none;
+    list-style: none; 
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+section nav .links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+section nav .links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff4433;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+section nav .links ul li :hover::after{
+    width: 100%;
+}
+
+/* text box section */
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+    margin: 0;
+}
+.text-box p{
+    margin: 35px 20px 60px 20px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.text-box .visit-btn{
+    border: 3px solid #fff;
+    padding: 13px 45px;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.text-box .visit-btn:hover{
+    background-color: #3366ff;
+    border-color: #3366ff;
+}
+
+
+/* text box end*/
+@media(max-width :700px){
+    .text-box h1{
+        font-size: 50px;
+    }
+    .text-box p{
+        font-size: small;
+        margin: 35px 0px 60px 0px;
+    }
+    section nav img{
+        width: 115px;
+        margin-top: 15px;
+    }
+     section nav .links ul li{
+        display: block;
+        text-align: left;
+    }
+     .links{
+        position: absolute;
+        height: 100vh;
+        width: 330px;
+        top: 0;
+        right: 0;
+        background-color: #ff4433;
+        display: block;    
+        z-index: 2;
+        
+    }
+}
+
+
+/* section 2 course */
+.course{
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    top: 0;
+}
+.courses{
+    width: 90%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    background-color: #fff;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+
+.course .courses h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.course .courses p{
+    margin: 20px;
+    color: #777;
+    font-weight: 300;
+    font-size: 16px;
+}
+.course .graduation{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.course .graduation .grad{
+    width: 300px;
+    height: 500px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    
+}
+/* section 2 course end */
